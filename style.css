@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    background-color: rgb(65, 65, 65);
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    color: rgb(227, 227, 227);
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+
+    transition: all ease 1s;
+}
+
+table tr {
+    transition: all ease 1s;
+}
+
+table tr td {
+    transition: all ease 1s;
+
+    padding: 20px;
+    margin: 20px;
+
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+    border: 5px solid rgb(227, 227, 227);;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: rgb(227, 227, 227);
+
+}
+
+table tr:first-child td:first-child {
+    border-top: none;
+    border-left: none;
+}
+
+table tr:first-child td:nth-child(2) {
+    border-top: none;
+}
+
+table tr:first-child td:last-child {
+    border-top: none;
+    border-right: none;
+}
+
+table tr:nth-child(2) td:first-child {
+    border-left: none;
+}
+
+table tr:nth-child(2) td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td:first-child {
+    border-left: none;
+    border-bottom: none;
+}
+
+table tr:last-child td:nth-child(2) {
+    border-bottom: none;
+}
+
+table tr:last-child td:last-child {
+    border-right: none;
+    border-bottom: none;
+}
+
+.cellPlayerX {
+    background: radial-gradient(circle, rgba(192,243,182,1) 27%, rgba(192,243,182,0) 38%);
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(65, 65, 65);
+}
+
+.cellPlayerY {
+    background: radial-gradient(circle, rgba(255,219,147,1) 27%, rgba(255,219,147,0) 38%);
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(65, 65, 65);
+}
+
+.startGame {
+    width: 200px;
+    height: 50px;
+
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, rgba(162,255,199,0.5) 0%, rgba(255,219,147,0.5) 100%);
+
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(65, 65, 65);
+}
